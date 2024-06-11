@@ -1,0 +1,3 @@
+C:/Users/Harry/CLionProjects/untitled5/cmake-build-debug-mingw64/CMakeFiles/untitled5.dir
+C:/Users/Harry/CLionProjects/untitled5/cmake-build-debug-mingw64/CMakeFiles/edit_cache.dir
+C:/Users/Harry/CLionProjects/untitled5/cmake-build-debug-mingw64/CMakeFiles/rebuild_cache.dir

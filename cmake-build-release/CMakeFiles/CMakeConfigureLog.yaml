@@ -1,0 +1,269 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/3.27.8/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-iq2rt5"
+      binary: "C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-iq2rt5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-iq2rt5'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_9d1ed
+        [1/2] C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_9d1ed.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20240305' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (crosstool-NG esp-13.2.0_20240305) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9d1ed.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_9d1ed.dir/'
+         C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/cc1.exe -quiet -v -iprefix C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/ -isysroot C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_9d1ed.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -version -fdiagnostics-color=always -o C:\\Users\\Harry\\AppData\\Local\\Temp\\ccN0wzJd.s
+        GNU C17 (crosstool-NG esp-13.2.0_20240305) version 13.2.0 (xtensa-esp-elf)
+        	compiled by GNU C version 6.3.0 20170516, GMP version 6.2.1, MPFR version 4.2.1, MPC version 1.2.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include"
+        ignoring nonexistent directory "C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/builds/idf/crosstool-NG/builds/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/../../../../include"
+        ignoring duplicate directory "C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed"
+        ignoring duplicate directory "C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include"
+        ignoring duplicate directory "C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include
+         C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed
+         C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include
+        End of search list.
+        Compiler executable checksum: 982ddc13f6c1d7dffb43d7f028d6c694
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9d1ed.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_9d1ed.dir/'
+         C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format -o CMakeFiles/cmTC_9d1ed.dir/CMakeCCompilerABI.c.obj C:\\Users\\Harry\\AppData\\Local\\Temp\\ccN0wzJd.s
+        COMPILER_PATH=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/
+        LIBRARY_PATH=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9d1ed.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_9d1ed.dir/CMakeCCompilerABI.c.'
+        [2/2] cmd.exe /C "cd . && C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe  -v CMakeFiles/cmTC_9d1ed.dir/CMakeCCompilerABI.c.obj -o cmTC_9d1ed.exe -Wl,--out-implib,libcmTC_9d1ed.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        FAILED: cmTC_9d1ed.exe 
+        cmd.exe /C "cd . && C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe  -v CMakeFiles/cmTC_9d1ed.dir/CMakeCCompilerABI.c.obj -o cmTC_9d1ed.exe -Wl,--out-implib,libcmTC_9d1ed.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe
+        COLLECT_LTO_WRAPPER=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper.exe
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20240305' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (crosstool-NG esp-13.2.0_20240305) 
+        COMPILER_PATH=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/
+        LIBRARY_PATH=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9d1ed.exe' '-dumpdir' 'cmTC_9d1ed.'
+         C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2.exe -plugin C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.dll -plugin-opt=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Harry\\AppData\\Local\\Temp\\cc847hck.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf -o cmTC_9d1ed.exe C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/crt0.o C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/crti.o C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/crtbegin.o -LC:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0 -LC:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc -LC:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib -LC:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_9d1ed.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_9d1ed.dll.a --major-image-version 0 --minor-image-version 0 -lgcc -lc -lnosys -lc -lgcc C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/crtend.o C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/crtn.o
+        C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld.exe: unrecognized option '--major-image-version'
+        C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld.exe: use the --help option for usage information
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp-elf-gcc.exe"
+    directories:
+      source: "C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-w4yzd5"
+      binary: "C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-w4yzd5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-w4yzd5'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_31996
+        [1/2] C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_31996.dir/testCCompiler.c.obj -c C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-w4yzd5/testCCompiler.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe   CMakeFiles/cmTC_31996.dir/testCCompiler.c.obj -o cmTC_31996.exe -Wl,--out-implib,libcmTC_31996.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: cmTC_31996.exe 
+        cmd.exe /C "cd . && C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe   CMakeFiles/cmTC_31996.dir/testCCompiler.c.obj -o cmTC_31996.exe -Wl,--out-implib,libcmTC_31996.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld.exe: unrecognized option '--major-image-version'
+        C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld.exe: use the --help option for usage information
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp-elf-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/3.27.8/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-m2z1es"
+      binary: "C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-m2z1es"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-m2z1es'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_9bc6a
+        [1/2] C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_9bc6a.dir/CMakeCCompilerABI.c.obj -c "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c"
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20240305' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (crosstool-NG esp-13.2.0_20240305) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9bc6a.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_9bc6a.dir/'
+         C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/cc1.exe -quiet -v -iprefix C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/ -isysroot C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_9bc6a.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -version -fdiagnostics-color=always -o C:\\Users\\Harry\\AppData\\Local\\Temp\\ccjhfT7q.s
+        GNU C17 (crosstool-NG esp-13.2.0_20240305) version 13.2.0 (xtensa-esp-elf)
+        	compiled by GNU C version 6.3.0 20170516, GMP version 6.2.1, MPFR version 4.2.1, MPC version 1.2.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include"
+        ignoring nonexistent directory "C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/builds/idf/crosstool-NG/builds/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/13.2.0/../../../../include"
+        ignoring duplicate directory "C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed"
+        ignoring duplicate directory "C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/lib/gcc/../../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include"
+        ignoring duplicate directory "C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include
+         C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/include-fixed
+         C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/include
+        End of search list.
+        Compiler executable checksum: 982ddc13f6c1d7dffb43d7f028d6c694
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9bc6a.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_9bc6a.dir/'
+         C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/as.exe --traditional-format -o CMakeFiles/cmTC_9bc6a.dir/CMakeCCompilerABI.c.obj C:\\Users\\Harry\\AppData\\Local\\Temp\\ccjhfT7q.s
+        COMPILER_PATH=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/
+        LIBRARY_PATH=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_9bc6a.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_9bc6a.dir/CMakeCCompilerABI.c.'
+        [2/2] cmd.exe /C "cd . && C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe  -v CMakeFiles/cmTC_9bc6a.dir/CMakeCCompilerABI.c.obj -o cmTC_9bc6a.exe -Wl,--out-implib,libcmTC_9bc6a.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        FAILED: cmTC_9bc6a.exe 
+        cmd.exe /C "cd . && C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe  -v CMakeFiles/cmTC_9bc6a.dir/CMakeCCompilerABI.c.obj -o cmTC_9bc6a.exe -Wl,--out-implib,libcmTC_9bc6a.dll.a -Wl,--major-image-version,0,--minor-image-version,0   && cd ."
+        Using built-in specs.
+        COLLECT_GCC=C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe
+        COLLECT_LTO_WRAPPER=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper.exe
+        Target: xtensa-esp-elf
+        Configured with: /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/gcc/configure --build=x86_64-build_pc-linux-gnu --host=x86_64-host_w64-mingw32 --target=xtensa-esp-elf --prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --exec_prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf --with-local-prefix=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-sysroot=/builds/idf/crosstool-NG/builds/xtensa-esp-elf/xtensa-esp-elf --with-native-system-header-dir=/include --with-newlib --enable-threads=no --disable-shared --with-pkgversion='crosstool-NG esp-13.2.0_20240305' --disable-__cxa_atexit --enable-cxx-flags=-ffunction-sections --disable-libgomp --disable-libmudflap --disable-libmpx --disable-libssp --disable-libquadmath --disable-libquadmath-support --disable-libstdcxx-verbose --with-gmp=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --with-mpfr=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --with-mpc=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --with-isl=/builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/buildtools/complibs-host --enable-lto --enable-target-optspace --without-long-double-128 --disable-nls --enable-multiarch --enable-languages=c,c++ --disable-libstdcxx-verbose --enable-threads=posix --enable-gcov-custom-rtio --enable-libstdcxx-time=yes --with-gnu-ld
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 13.2.0 (crosstool-NG esp-13.2.0_20240305) 
+        COMPILER_PATH=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/
+        LIBRARY_PATH=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/;C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_9bc6a.exe' '-dumpdir' 'cmTC_9bc6a.'
+         C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/collect2.exe -plugin C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/liblto_plugin.dll -plugin-opt=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/13.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\\Users\\Harry\\AppData\\Local\\Temp\\ccJI8RxL.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf -o cmTC_9bc6a.exe C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib/crt0.o C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/crti.o C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/crtbegin.o -LC:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0 -LC:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc -LC:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/lib -LC:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -LC:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_9bc6a.dir/CMakeCCompilerABI.c.obj --out-implib libcmTC_9bc6a.dll.a --major-image-version 0 --minor-image-version 0 -lgcc -lc -lnosys -lc -lgcc C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/crtend.o C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/crtn.o
+        C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld.exe: unrecognized option '--major-image-version'
+        C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld.exe: use the --help option for usage information
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp-elf-gcc.exe"
+    directories:
+      source: "C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-rq7rjj"
+      binary: "C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-rq7rjj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-rq7rjj'
+        
+        Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_2cadc
+        [1/2] C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_2cadc.dir/testCCompiler.c.obj -c C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-rq7rjj/testCCompiler.c
+        [2/2] cmd.exe /C "cd . && C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe   CMakeFiles/cmTC_2cadc.dir/testCCompiler.c.obj -o cmTC_2cadc.exe -Wl,--out-implib,libcmTC_2cadc.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        FAILED: cmTC_2cadc.exe 
+        cmd.exe /C "cd . && C:\\Users\\Harry\\.espressif\\tools\\xtensa-esp-elf\\esp-13.2.0_20240305\\xtensa-esp-elf\\bin\\xtensa-esp-elf-gcc.exe   CMakeFiles/cmTC_2cadc.dir/testCCompiler.c.obj -o cmTC_2cadc.exe -Wl,--out-implib,libcmTC_2cadc.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+        C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld.exe: unrecognized option '--major-image-version'
+        C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld.exe: use the --help option for usage information
+        collect2.exe: error: ld returned 1 exit status
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+...

@@ -1,0 +1,37 @@
+"C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -DCMAKE_C_COMPILER=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp-elf-gcc.exe -DCMAKE_CXX_COMPILER=C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp32-elf-g++.exe -G Ninja -S C:\Users\Harry\CLionProjects\untitled5 -B C:\Users\Harry\CLionProjects\untitled5\cmake-build-release
+-- The C compiler identification is GNU 13.2.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp-elf-gcc.exe
+-- Check for working C compiler: C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp-elf-gcc.exe - broken
+CMake Error at C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/CMakeTestCCompiler.cmake:67 (message):
+  The C compiler
+
+    "C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/xtensa-esp-elf-gcc.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: 'C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-rq7rjj'
+    
+    Run Build Command(s): "C:/Program Files/JetBrains/CLion 2023.3.2/bin/ninja/win/x64/ninja.exe" -v cmTC_2cadc
+    [1/2] C:\Users\Harry\.espressif\tools\xtensa-esp-elf\esp-13.2.0_20240305\xtensa-esp-elf\bin\xtensa-esp-elf-gcc.exe   -fdiagnostics-color=always -o CMakeFiles/cmTC_2cadc.dir/testCCompiler.c.obj -c C:/Users/Harry/CLionProjects/untitled5/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-rq7rjj/testCCompiler.c
+    [2/2] cmd.exe /C "cd . && C:\Users\Harry\.espressif\tools\xtensa-esp-elf\esp-13.2.0_20240305\xtensa-esp-elf\bin\xtensa-esp-elf-gcc.exe   CMakeFiles/cmTC_2cadc.dir/testCCompiler.c.obj -o cmTC_2cadc.exe -Wl,--out-implib,libcmTC_2cadc.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+    FAILED: cmTC_2cadc.exe 
+    cmd.exe /C "cd . && C:\Users\Harry\.espressif\tools\xtensa-esp-elf\esp-13.2.0_20240305\xtensa-esp-elf\bin\xtensa-esp-elf-gcc.exe   CMakeFiles/cmTC_2cadc.dir/testCCompiler.c.obj -o cmTC_2cadc.exe -Wl,--out-implib,libcmTC_2cadc.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+    C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld.exe: unrecognized option '--major-image-version'
+    C:/Users/Harry/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240305/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/13.2.0/../../../../xtensa-esp-elf/bin/ld.exe: use the --help option for usage information
+    collect2.exe: error: ld returned 1 exit status
+    ninja: build stopped: subcommand failed.
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
