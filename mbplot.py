@@ -21,7 +21,7 @@ def line_plots(df):
         df: Data frame of CSV output from membench
     """
     for key, grp in df.groupby("size"):
-        plt.semilogx(grp['stride'], grp['ns'], label=size_name(key))
+        plt.semilogx(grp['stride'], grp['ns'], label=size_name(key), base=2)
     lgd = plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
     plt.xlabel('Stride (bytes)')
     plt.ylabel('Time (ns)')
